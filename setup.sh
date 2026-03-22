@@ -27,7 +27,7 @@ get_server_ip() {
 }
 
 # --- Check Python version (>= 3.12 required) ---
-PYTHON_BIN="${PYTHON_BIN:-python3}"
+PYTHON_BIN="${PYTHON_BIN:-python}"
 if command -v "$PYTHON_BIN" &>/dev/null; then
     PY_VER=$("$PYTHON_BIN" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
     PY_MAJOR=$(echo "$PY_VER" | cut -d. -f1)
