@@ -420,7 +420,7 @@ fi
 echo ""
 echo -e "${YELLOW}[6/6]${NC} Running database seed..."
 
-if .venv/bin/python seed.py 2>&1 | while IFS= read -r line; do echo "  $line"; done; then
+ifpython seed.py 2>&1 | while IFS= read -r line; do echo "  $line"; done; then
     echo ""
 else
     echo ""
